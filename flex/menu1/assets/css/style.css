@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Asap', sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.menuSection{
+    padding: 200px 0;
+    background-color: #353b48;
+}
+.heading{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.menu{
+    list-style: none;
+    background-color: #dcdcde;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.navbar1 li a{
+    text-transform: uppercase;
+}
+.menu li{
+    flex-grow: 1;
+    text-align: center;
+}
+.menu li a:link,.menu li a:visited{
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    color: #353b48;
+    font-size: 16px;
+}
+.menu li a:hover{
+    background-color: #f5f5f6;
+}
+
+/* ============== navbar2 css ================= */
+.navbar2 li{
+    width: calc(100% / 3);
+}
+.navbar2 li a:link, .navbar2 li a:visited{
+    display: flex;
+}
+.navbar2 li a .icon{
+    flex-basis: 60px;
+    font-size: 40px;
+    align-self: center;
+}
+.info h4{
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 24px;
+    text-align: left;
+}
+.info span{
+    display: block;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: lighter;
+}

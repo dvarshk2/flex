@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-compatible' content="IE=edge">
+	<meta name='viewport' content="width=device-width,initial-scale=1.0">
+	<title>Flex Introduction</title>
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="flex-container">
+			<h2>Flex-container Properties</h2>
+			<div class="flex-direction">
+				<div class="info">
+					<p><b>display : flex</b> >> property value to be given to Flex container</p>
+					<p>all direct childs of flex container will move side by side</p>
+					<p><b>flex items</b> >> direct childs of flex container</p>
+					<strong>flex-direction >> along main axis</strong>
+				</div>
+				<hr>
+				<strong>flex-direction: row;</strong> // By default Direction
+				<div class="row1">
+					<div class="items">FI-1</div>
+					<div class="items">FI-2</div>
+					<div class="items">FI-3</div>
+					<div class="items">FI-4</div>
+					<div class="items">FI-5</div>
+				</div>
+				<hr>
+				<div class="info">
+					<p><b>Main Axis</b> : horizontal axis of flex container </p>
+					<p><strong>Direction</strong>: Left to right</p>
+					<p><b>Cross Axis</b> : Vertical Axis of Flex container, perpendicular to main axis </p>
+					<p><strong>Direction</strong>: Top to Bottom</p>
+				</div>
+				<hr>
+				<div class="info">
+					<strong>flex-direction: row-reverse;</strong>
+				</div>
+				<div class="row2">
+					<div class="items">FI-1</div>
+					<div class="items">FI-2</div>
+					<div class="items">FI-3</div>
+					<div class="items">FI-4</div>
+					<div class="items">FI-5</div>
+				</div>
+				<hr>
+				
+				<div class="row3">
+					<div class="col-sm-6">
+						<div class="info">
+							<strong>flex-direction: column;</strong>
+						</div>
+						<div class="column">
+							<div class="items">FI-1</div>
+							<div class="items">FI-2</div>
+							<div class="items">FI-3</div>
+							<div class="items">FI-4</div>
+							<div class="items">FI-5</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="info">
+							<strong>flex-direction: column-reverse;</strong>
+						</div>
+						<div class="column-reverse">
+							<div class="items">FI-1</div>
+							<div class="items">FI-2</div>
+							<div class="items">FI-3</div>
+							<div class="items">FI-4</div>
+							<div class="items">FI-5</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="justify-content">
+				<div class="info">
+					<h3>Justify-content </h3>
+					<strong>justify-content : flex-start;</strong> // bydefault value
+					<p>Align flex items Along Main Axis</p>
+				</div>
+				<div class="flex-start">
+					<div class="items">FI-1</div>
+					<div class="items">FI-2</div>
+					<div class="items">FI-3</div>
+					<div class="items">FI-4</div>
+					<div class="items">FI-5</div>
+				</div>
+				<div class="info">
+					<strong>justify-content: center</strong>
+				</div>
+				<div class="center">
+					<div class="items">FI-1</div>
+					<div class="items">FI-2</div>
+					<div class="items">FI-3</div>
+					<div class="items">FI-4</div>
+					<div class="items">FI-5</div>
+				</div>
+				<div class="info">
+					<strong>justify-content: flex-end</strong>
+				</div>
+				<div class="flex-end">
+					<div class="items">FI-1</div>
+					<div class="items">FI-2</div>
+					<div class="items">FI-3</div>
+					<div class="items">FI-4</div>
+					<div class="items">FI-5</div>
+				</div>
+				<div class="info">
+					<strong>justify-content: space-between</strong>
+					<p>empty space available in flex container will be equally divided in between two consecutive flex-items</p>
+				</div>
+				<div class="space-between">
+					<div class="item">FI-1</div>
+					<div class="item">FI-2</div>
+					<div class="item">FI-3</div>
+					<div class="item">FI-4</div>
+					<div class="item">FI-5</div>
+				</div>
+				<div class="info">
+					<strong>justify-content: space-around</strong>
+					<p>empty space available in flex container will be equally divided to both sides of flex-items</p>
+					<p>space-between two consecutive items will be double as compared to start of left-item and right of end-item</p>
+				</div>
+				<div class="space-around">
+					<div class="item">FI-1</div>
+					<div class="item">FI-2</div>
+					<div class="item">FI-3</div>
+					<div class="item">FI-4</div>
+					<div class="item">FI-5</div>
+				</div>
+				<div class="info">
+					<strong>justify-content: space-evenly</strong>
+					<p>space between and space around flex items will be same</p>
+				</div>
+				<div class="space-evenly">
+					<div class="item">FI-1</div>
+					<div class="item">FI-2</div>
+					<div class="item">FI-3</div>
+					<div class="item">FI-4</div>
+					<div class="item">FI-5</div>
+				</div>
+			</div>
+			<div class="align-items">
+				<div class="info">
+					<h3>align-items</h3>
+					<strong>align-items : stretch; </strong>	//by default value
+					<p>align flex-items along cross axis</p>
+					<p>height of <i><b>all flex-items</b></i> will be equal to <i><b>flex-container height</b></i></p>
+				</div>
+				<div class="stretch">
+					<div class="itm">1</div>
+					<div class="itm">2</div>
+					<div class="itm">3</div>
+					<div class="itm itm4">4</div>
+					<div class="itm itm5">5</div>
+				</div>
+				<div class="info">
+					<strong>align-items: baseline;</strong>
+					<p>base of content will be on same line</p>
+				</div>
+				<div class="baseline">
+					<div class="items">1</div>
+					<div class="items">2</div>
+					<div class="items item3">3</div>
+					<div class="items item4">4</div>
+					<div class="items">5</div>
+				</div>
+				<div class="info">
+					<strong>align-items: center;</strong>
+					<p>space on top and bottom of flex items is same i.e. space on top = space at bottom</p>
+				</div>
+				<div class="center">
+					<div class="items">1</div>
+					<div class="items">2</div>
+					<div class="items item3">3</div>
+					<div class="items item4">4</div>
+					<div class="items">5</div>
+				</div>
+				<div class="info">
+					<strong>align-items: flex-start;</strong>
+					<p>each flex item will start from same point of cross axis i.e. on same horisontal line</p>
+					<em>here justify-content and align-items both propertirs applied as class name is same</em>
+				</div>
+				<div class="flex-start">
+					<div class="items">1</div>
+					<div class="items">2</div>
+					<div class="items item3">3</div>
+					<div class="items item4">4</div>
+					<div class="items">5</div>
+				</div>
+				<div class="info">
+					<strong>align-items: flex-end;</strong>
+					<p>each flex item will start from same point of cross axis i.e. on same horisontal line</p>
+					<em>here justify-content and align-items both propertirs applied as class name is same</em>
+				</div>
+				<div class="flex-end">
+					<div class="items">1</div>
+					<div class="items">2</div>
+					<div class="items item3">3</div>
+					<div class="items item4">4</div>
+					<div class="items">5</div>
+				</div>
+			</div>
+			<div class="flex-dire-align-items">
+				<div class="col-sm-6">
+					<div class="info">
+						<p>flex-direction : column</p>
+						<p>align-items : flex-start</p>
+					</div>
+					<div class="col-flex-start">
+						<div class="items">1</div>
+						<div class="items">2</div>
+						<div class="items item3">3</div>
+						<div class="items item4">4</div>
+						<div class="items">5</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="info">
+						<p>flex-direction : column</p>
+						<p>align-items : flex-end</p>
+					</div>
+					<div class="col-flex-end">
+						<div class="items">1</div>
+						<div class="items">2</div>
+						<div class="items item3">3</div>
+						<div class="items item4">4</div>
+						<div class="items">5</div>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			<div class="info">
+				<strong>flex-wrap: nowrap;</strong>
+				<p>Items will move out of screen , will get horizontal scrollbar</p>
+			</div>
+			<div class="flex-wrap">
+				<div class="items">1</div>
+				<div class="items">2</div>
+				<div class="items item3">3</div>
+				<div class="items">4</div>
+				<div class="items item5">5</div>
+				<div class="items">1</div>
+				<div class="items">2</div>
+				<div class="items">3</div>
+				<div class="items">4</div>
+				<div class="items">5</div>				
+			</div>
+			<br><br>
+			<div class="info">
+				<strong>flex-wrap: wrap;</strong>
+				<p>as screen ends next items will start on new line</p>
+			</div>
+			<div class="flex-wrap wrap">
+				<div class="items">1</div>
+				<div class="items">2</div>
+				<div class="items item3">3</div>
+				<div class="items">4</div>
+				<div class="items item5">5</div>
+				<div class="items">6</div>
+				<div class="items">7</div>
+				<div class="items">8</div>
+				<div class="items">9</div>
+				<div class="items">10</div>				
+			</div>
+			<br><br>
+			<div class="info">
+				<strong>flex-wrap: wrap-reverse;</strong>
+				<p>items will wrap and show in reverse direction</p>
+			</div>
+			<div class="flex-wrap wrap-reverse">
+				<div class="items">1</div>
+				<div class="items">2</div>
+				<div class="items item3">3</div>
+				<div class="items">4</div>
+				<div class="items item5">5</div>
+				<div class="items">6</div>
+				<div class="items">7</div>
+				<div class="items">8</div>
+				<div class="items">9</div>
+				<div class="items">10</div>				
+			</div>	
+		</div>
+		<br><hr><br>
+		<!-- <div class="flex-items">
+			<div class="info">
+				<h3>flex-items properties and values</h3>
+				<strong>align-self: auto</strong>		//bydefault value
+			</div>
+			<div class="align-self auto">
+				<div class="self">1</div>
+				<div class="self self2">2</div>
+				<div class="self self3">3</div>
+				<div class="self">4</div>
+				<div class="self self5">5</div>
+			</div>
+			<br><br>
+			<div class="info">
+				<h3>flex-items properties and values</h3>
+				<strong>align-self: flex-end</strong>	
+				<p>here block 1 and 3 moved to bootom i.e. <em>FLEX END</em></p>
+			</div>
+			<div class="align-self flexEnd">
+				<div class="self self1">1</div>
+				<div class="self self2">2</div>
+				<div class="self self3">3</div>
+				<div class="self">4</div>
+				<div class="self self5">5</div>
+			</div>
+			<br><br>
+			<div class="info">
+				<h3>flex-items properties and values</h3>
+				<strong>align-self: flex-start</strong>	
+				<p>here block 1 and 3 moved at top i.e. <em>FLEX start</em></p>
+			</div>
+			<div class="align-self flexstart">
+				<div class="self self1">1</div>
+				<div class="self self2">2</div>
+				<div class="self self3">3</div>
+				<div class="self">4</div>
+				<div class="self self5">5</div>
+			</div>
+			<br><br>
+			<div class="info">
+				<h3>flex-items properties and values</h3>
+				<strong>align-self: stretch</strong>	
+				<p>here block 1 and 3 height stretched to block 5 ... max height among all i.e. <em>stretch</em></p>
+			</div>
+			<div class="align-self align-self-stretch">
+				<div class="self11">1</div>
+				<div class="self self2">2</div>
+				<div class="self33">3</div>
+				<div class="self">4</div>
+				<div class="self self5">5</div>
+			</div>
+			<br><br>
+			<div class="info">
+				<h3>flex-items properties and values</h3>
+				<strong>align-self: baseline</strong>	
+				<p>here block 1 and 3  moved at top line i.e. <em> baseline</em></p>
+			</div>
+			<div class="align-self align-self-baseline">
+				<div class="self self1">1</div>
+				<div class="self self2">2</div>
+				<div class="self self3">3</div>
+				<div class="self self4">4</div>
+				<div class="self self5">5</div>
+			</div>
+			<br><br>
+			<div class="info">
+				<h3>flex-items properties and values</h3>
+				<strong>align-self: center</strong>	
+				<p>here block 1 and 3 moved to center i.e. <em> center</em></p>
+			</div>
+			<div class="align-self align-self-center">
+				<div class="self self1">1</div>
+				<div class="self self2">2</div>
+				<div class="self self3">3</div>
+				<div class="self">4</div>
+				<div class="self self5">5</div>
+			</div>
+			<br><hr><br>
+			<br><br>
+			<div class="info">
+				<h3>flex-items properties and values</h3>
+				<strong>order: 0 | integer</strong>	
+				<p>Order : 0 means bydefault order i.e. order as per html<em> order : 0</em> //By default order</p>
+			</div>
+			<div class="order">
+				<div class="self ">1</div>
+				<div class="self ">2</div>
+				<div class="self ">3</div>
+				<div class="self">4</div>
+				<div class="self ">5</div>
+			</div>
+			<br><br>
+			<div class="info">
+				<h3>flex-items properties and values</h3>
+				<strong>order: -1</strong>	
+				<p>item 3 will be first in this case<em> order : -1</em> </p>
+			</div>
+			<div class="order order-3">
+				<div class="self ">1</div>
+				<div class="self ">2</div>
+				<div class="self self3">3</div>
+				<div class="self">4</div>
+				<div class="self">5</div>
+			</div>
+			<br><br>
+			<div class="info">
+				<h3>flex-items properties and values</h3>
+				<strong>order: -2</strong>	
+				<p>item 5 will be first, item 3 will be at second<em> order : -2</em> </p>
+			</div>
+			<div class="order order-3">
+				<div class="self ">1</div>
+				<div class="self ">2</div>
+				<div class="self self3">3</div>
+				<div class="self">4</div>
+				<div class="self self5">5</div>
+			</div>
+			<br><br>
+			<div class="info">
+				<h3>flex-items properties and values</h3>
+				<strong>order: 1</strong>	
+				<p>item 2 will last		<em> <b>order : 1</b></em> </p>
+			</div>
+			<div class="order order-3">
+				<div class="self ">1</div>
+				<div class="self self2">2</div>
+				<div class="self self3">3</div>
+				<div class="self">4</div>
+				<div class="self self5">5</div>
+			</div>
+			<br><br>
+			<div class="info">
+				<h3>flex-items properties and values</h3>
+				<strong>flex-grow: 0</strong>	
+				<p>items will not grow<em> <b>flex-grow : 0</b></em>// Bydefault value </p>
+			</div>
+			<div class="flex-grow flex-grow-0">
+				<div class="self ">1</div>
+				<div class="self "">2</div>
+				<div class="self ">3</div>
+				<div class="self">4</div>
+				<div class="self self5">5</div>
+			</div>
+			<br><br>
+			<div class="info">
+				<h3>flex-items properties and values</h3>
+				<strong>flex-grow: 1</strong>	
+				<p>item 5 will spread along main axis, occupy whole available empty space to itself <em> <b>flex-grow : 1</b></em></p>
+			</div>
+			<div class="flex-grow flex-grow-5">
+				<div class="self ">1</div>
+				<div class="self "">2</div>
+				<div class="self ">3</div>
+				<div class="self">4</div>
+				<div class="self self5">5</div>
+			</div>
+			<br><br>
+			<div class="info">
+				<h3>flex-items properties and values</h3>
+				<strong>flex-grow: 1</strong>	
+				<p>items will grow along main axis and occupy equal space<em> <b>flex-grow : 1</b></em></p>
+			</div>
+			<div class="flex-grow flex-grow-1">
+				<div class="self ">1</div>
+				<div class="self "">2</div>
+				<div class="self ">3</div>
+				<div class="self">4</div>
+				<div class="self ">5</div>
+			</div>
+			<br><br>
+			<div class="info">
+				<h3>flex-items properties and values</h3>
+				<strong>flex: 1</strong>	
+				<p>Each item will grow along main axis and occupy equal available space space<em> <b>flex: 1</b></em></p>
+			</div>
+			<div class="flex-grow flex-0">
+				<div class="flex-item">1</div>
+				<div class="flex-item">2</div>
+				<div class="flex-item">3</div>
+				<div class="flex-item">4</div>
+				<div class="flex-item">5</div>
+			</div>
+			<br><br>
+			<div class="info">
+				<h3>flex-items properties and values</h3>
+				<strong>flex: 3</strong>	
+				<p>width of item 1 will be 3 times of all others<em> <b>flex: 3</b></em></p>
+			</div>
+			<div class="flex-grow flex-0">
+				<div class="flex-item flex-item-1">1</div>
+				<div class="flex-item">2</div>
+				<div class="flex-item">3</div>
+				<div class="flex-item">4</div>
+				<div class="flex-item">5</div>
+			</div>
+			<br><br>
+			<div class="info">
+				<h3>flex-items properties and values</h3>
+				<strong>flex: 3</strong>	
+				<p>width of item 1 & 4 will be 3 times of all others</p>
+			</div>
+			<div class="flex-grow flex-0">
+				<div class="flex-item flex-item-1">1</div>
+				<div class="flex-item">2</div>
+				<div class="flex-item">3</div>
+				<div class="flex-item flex-item-4">4</div>
+				<div class="flex-item">5</div>
+			</div>
+			<br><br>
+			<div class="info">
+				<h3>flex-items properties and values</h3>
+				<strong>flex: 3</strong>	
+				<p>width of item 2 will be twice and width of item 5 will thrice of others</p>
+			</div>
+			<div class="flex-grow flex-0">
+				<div class="flex-item">1</div>
+				<div class="flex-item flex-item-2">2</div>
+				<div class="flex-item">3</div>
+				<div class="flex-item">4</div>
+				<div class="flex-item flex-item-5">5</div>
+			</div>
+			<br><br>
+			<div class="info">
+				<h3>flex-items properties and values</h3>
+				<strong>flex-basis: 3</strong>	
+				<p>item 5 will shrink if screen size reduces because flex-shrink : 1 // bydefault value </p>
+			</div>
+			<div class="flex-basis">
+				<div class="flex-basis-auto">1</div>
+				<div class="flex-basis-auto flex-basis-2">2</div>
+				<div class="flex-basis-auto">3</div>
+				<div class="flex-basis-auto">4</div>
+				<div class="flex-basis-auto flex-basis-5">5</div>
+			</div>
+			<br><br>
+			<div class="info">
+				<h3>flex-items properties and values</h3>
+				<strong>flex-basis: 3</strong>	
+				<p>item 4 will not shrink if screen size reduces because flex-shrink : 0 </p>
+			</div>
+			<div class="flex-basis">
+				<div class="flex-basis-auto">1</div>
+				<div class="flex-basis-auto flex-basis-2">2</div>
+				<div class="flex-basis-auto">3</div>
+				<div class="flex-basis-auto flex-basis-4">4</div>
+				<div class="flex-basis-auto ">5</div>
+			</div>
+		</div> -->
+	</div>
+	<script src="./assets/js/app.js"></script>
+</body>
+</html>

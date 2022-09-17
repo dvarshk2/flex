@@ -1,0 +1,299 @@
+/*   this is known as css resetting */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.flex-container{
+    border: 1px solid green;
+    padding: 10px;
+}
+.flex-direction{
+    border: 2px dashed black ;
+}
+.info{
+    font-size: 18px;
+    margin: 20px;
+}
+/* ***********   flex-direction   **************** */
+.row1{
+    margin: 20px;
+    background-color: #ddd;
+    border: 1px solid #000;
+    display:flex;
+    flex-direction:row; /*By default direction no need to write*/
+}
+
+.items{
+    height: 100px;
+    width: 100px;
+    background-color: hotpink;
+    margin: 10px;
+    text-align: center;
+}
+.row2{
+    background-color: #ddd;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.row3{
+    display: flex;
+    background-color: #ddd;
+}
+.row3 .items{
+    height: 30px;
+    width: 50px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.col-sm-6{
+    width: 50%;
+}
+
+.column-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+/* ***********   justify-content   **************** */
+.justify-content{
+    border: 2px solid red;
+}
+
+.flex-start,.center,.flex-end,.space-between,.space-around,.space-evenly{
+    background-color: #ddd;
+    display: flex;
+    justify-content: flex-start;
+}
+.center{
+    justify-content: center;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: hotpink;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-around{
+    justify-content: space-around;
+}
+.space-evenly{
+    justify-content: space-evenly;
+}
+/* ***********   align-items   **************** */
+.itm{
+  
+    margin: 10px;
+    width: 100px;
+    background-color: hotpink;
+}
+.align-items{
+    border: dotted 2px purple;
+
+}
+.stretch{
+    /* height: 200px; Height of flex-container */
+    display: flex;
+    align-items: stretch;
+}
+.align-items .baseline{
+    background-color: #ddd;
+    padding: 20px;
+    display: flex;
+    align-items: baseline;
+}
+.itm4{
+    font-size: 50px;
+}
+.itm5{
+    height: 150px;
+    font-size: 30px;
+}
+.align-items .baseline .items{
+ margin: 30px;
+}
+.align-items .center{
+    padding: 20px;
+    display: flex;
+    align-items:center;
+}
+.align-items .flex-start{
+    display: flex;
+    align-items: flex-start;
+}
+.align-items .flex-end{
+    display: flex;
+    align-items: flex-end;
+}
+/* ********************************************** */
+.flex-dire-align-items{
+    display: flex;
+    background-color: #ddd;
+}
+.col-flex-start{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.col-flex-end{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+/* ********************************************** */
+.flex-wrap{
+    background-color: #ddd;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+.flex-wrap .items{   
+    flex-shrink: 0;
+}
+.flex-wrap .item3{
+    width: 200px;
+}
+.flex-wrap .item5{
+    width: 300px;
+}
+.flex-wrap.wrap{
+    background-color: #ddd;
+    flex-wrap: wrap;
+}
+.flex-wrap.wrap-reverse{
+    background-color: #ddd;
+    flex-wrap: wrap-reverse;
+}
+
+
+
+
+
+
+
+/* *************  flex-items properties *********************  */
+.flex-items{
+    border: 1px solid green;
+}
+/*===================== align-self =======================*/
+.align-self, .order, .flex-grow,.flex-basis{
+    background-color: rgb(245, 245, 158);
+    display: flex;
+    align-items: center;
+}
+
+.self{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: teal;
+   text-align: center;
+}
+.self1{
+    align-self: flex-end;
+}
+.self2{
+    height: 150px;
+}
+.self3{
+    height: 50px;
+    align-self: flex-end;
+}
+.self5{
+    height: 200px;
+}
+.flexstart .self3, .flexstart .self1{
+    align-self: stretch;
+}
+.align-self-stretch .self33, .align-self-stretch .self11{
+    width: 100px;
+    background-color: teal;
+    margin: 10px;
+    align-self: stretch;
+}
+
+.align-self-baseline .self3{
+    height: 120px;
+}
+.align-self-baseline .self1,.align-self-baseline .self3{
+    align-self: baseline;
+}
+.align-self-center .self1,.align-self-center .self3{
+    align-self: center;
+}
+
+/*======================= order =======================*/
+
+.order-3 .self3{
+    order: -1;
+}
+.order-3 .self5{
+    order: -2;
+}
+.order-3 .self2{
+    order: 1;
+}
+
+/* ===========     flex-grow    ============ */
+.flex-grow-0 .self{
+    flex-grow: 0;
+}
+.flex-grow-5 .self5{
+    flex-grow: 1;
+}
+.flex-grow-1 .self{
+    flex-grow: 1;
+}
+.flex-grow.flex-0{
+    flex: 0;
+}
+.flex-item{
+    height: 100px;
+    background-color: rgb(66, 73, 71);
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+    flex: 1;
+}
+.flex-item.flex-item-1,.flex-item.flex-item-4{
+    flex: 3;
+}
+.flex-item.flex-item-2{
+    flex: 2;
+}
+.flex-item.flex-item-5{
+    flex: 3;
+}
+/* =========== flex-basis =================== */
+.flex-basis-auto{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(2, 40, 40);
+    font-size: 24px;
+    color: #fff;
+    margin: 10px;
+   
+}
+.flex-basis-5{
+    flex-basis: 200px;
+}
+.flex-basis-2{
+    flex: 3;
+}
+.flex-basis-4{
+    flex-basis: 300px;
+    flex-shrink: 0;
+}
